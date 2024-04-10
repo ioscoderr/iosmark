@@ -3,6 +3,7 @@ ios mark for your hacks
 
 <b> Init mark view: </b>
 ```obj-c
+WatermarkView *wm;
 CGRect mainScreenBounds = [UIScreen mainScreen].bounds;
 CGFloat wmWidth = 130;
 CGFloat wmHeight = 50;
@@ -13,7 +14,6 @@ wm = [[WatermarkView alloc] initWithFrame:CGRectMake(wmX, wmY, wmWidth, wmHeight
 
 <b> Add mark view: </b>
 ```obj-c
-WatermarkView *wm;
 UIWindow *keyWindow = [[UIApplication sharedApplication] keyWindow];
 [keyWindow addSubview:wm];
 ```
